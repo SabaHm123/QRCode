@@ -1,0 +1,21 @@
+<div style="text-align: center; margin-top: 50px;">
+    <h2>Générateur de QR Code</h2>
+    
+    <input 
+      type="text" 
+      [(ngModel)]="textToEncode" 
+      placeholder="Entrez du texte" 
+      style="padding: 10px; width: 300px; margin-bottom: 20px;" 
+    />
+  
+    <button 
+      (click)="generateQRCode()" 
+      style="padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: #007bff; color: white; border: none; border-radius: 5px;">
+      Générer le QR Code
+    </button>
+    
+    <div *ngIf="qrCodeImage" style="margin-top: 30px;">
+      <img [src]="qrCodeImage" alt="QR Code" style="width: 200px; height: 200px;" />
+    </div>
+  </div>
+  
