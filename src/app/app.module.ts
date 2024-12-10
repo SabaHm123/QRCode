@@ -7,18 +7,20 @@ import { AppComponent } from './app.component';
 import { QrGeneratorComponent } from './qr-generator/qr-generator.component';
 import { FormsModule } from '@angular/forms';
 import { WeatherDisplayComponent } from './weather-display/weather-display.component';
+import { PayementComponent } from './payement/payement.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QrGeneratorComponent,
-    WeatherDisplayComponent
+    WeatherDisplayComponent,
+    PayementComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule // Ajoutez HttpClientModule ici
+    HttpClientModule// Ajoutez HttpClientModule ici
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA], // Ajoutez ceci
